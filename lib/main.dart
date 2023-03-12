@@ -59,6 +59,7 @@ class _HomePageState extends State<HomePage> {
       body: Column(
         children: <Widget>[
           Expanded(
+            flex: 0,
             child: Container(
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -99,6 +100,7 @@ class _HomePageState extends State<HomePage> {
                         buttonTapped: () {
                           setState(() {
                             userQuestion = '';
+                            userAnswer = '';
                           });
                         },
                         buttonText: buttons[index],
